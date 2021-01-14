@@ -169,7 +169,7 @@ class Validator implements ValidatorContract
         'Between',
         'Dimensions',
         'File',
-        'Image',
+        'ImageController',
         'Max',
         'Mimes',
         'Mimetypes',
