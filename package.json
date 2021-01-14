@@ -20,5 +20,10 @@
         "resolve-url-loader": "^3.1.0",
         "tailwindcss": "^1.8.0",
         "vue-template-compiler": "^2.6.12"
+    },
+    "dependencies": {
+        "@material-ui/core": "^4.11.2",
+        "@material/data-table": "^9.0.0",
+        "material-table": "^1.69.2"
     }
 }
