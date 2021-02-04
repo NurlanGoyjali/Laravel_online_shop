@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Product extends Migration
+class User extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class Product extends Migration
      */
     public function up()
     {
-
+        //
     }
 
     /**

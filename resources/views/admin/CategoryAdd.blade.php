@@ -29,7 +29,7 @@
                                         <select name="Parent_id" class="form-control">
                                             <option value="" class="form-control" name="Parent_id" >Parent Seç (Parenti Yok) </option>
                                         @foreach($data as $rs)
-                                            <option class="form-control" value="{{$rs->id}}" >{{$rs->id}}</option>
+                                            <option class="form-control" value="{{$rs->id}}" >{{ $rs->title}}</option>
                                         @endforeach
 
                                         </select>

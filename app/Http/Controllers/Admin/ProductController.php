@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -14,13 +13,12 @@ class ProductController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function index()
     {
-        $product_data = DB::table('products')->get()->all();
+        $product_data = Product::all();
         $count = 1;
-
 
         return view('admin.product',['product' => $product_data ,'ct'=> $count] );
     }
@@ -28,7 +26,7 @@ class ProductController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
     public function create(Request $request)
     {
@@ -73,9 +71,9 @@ class ProductController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Models\Product  $product
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
-    public function show(Product $product,$id)
+    public function show($id)
     {
         $data = DB::table("products")->where('id',$id)->get()->first();
         $catname = DB::table("categories")->where('id',$data->category_id)->get()->first();
@@ -98,7 +96,7 @@ class ProductController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Product  $product
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function update(Request $request,$id)
     {
@@ -140,7 +138,21 @@ class ProductController extends Controller
     public function destroy(Product $product,$id)
     {
         DB::table('products')->where('id',$id)->delete();
-        echo 'başarılı silindi0';
         return redirect()->route('admin.product');
     }
+
+
+    public static function NumberOfProduct($id){
+        $data=DB::table("products")->get()->all();
+        $ct=0;
+        foreach($data as $rs){
+            if($rs->category_id == $id){
+                $ct=$ct+1;
+            }
+        }
+        if($ct==0)return 'Ürün Eklenmemiş';
+        else return $ct;
+    }
+
+
 }

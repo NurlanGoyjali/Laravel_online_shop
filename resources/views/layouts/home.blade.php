@@ -2,13 +2,19 @@
 <html lang="en">
 <head>
 
+    @php
+    $setting = \App\Http\Controllers\HomeController::SettingList()
+    @endphp
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta charset="utf-8">
-    <meta name="description" content="@yield('title')">
-    <meta name="author" content="@yield('title')">
-    <meta name="keywords" content="@yield('title')">
+    <meta name="description" content="@yield('description')">
+    <meta name="title" content="@yield('title')">
+    <meta name="keywords" content="@yield('keywords')">
     <title>@yield('title')</title>
+
+
 
     <link href="{{asset('assets')}}/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{asset('assets')}}/css/font-awesome.min.css" rel="stylesheet">

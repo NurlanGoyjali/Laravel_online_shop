@@ -11,10 +11,9 @@ class HomeController extends Controller
         if (session()->regenerate()){
             return view('admin.master');
         }else{
-            return view('admin.login');
+            return redirect('login');
         }
-
-
-
     }
+
+
 }

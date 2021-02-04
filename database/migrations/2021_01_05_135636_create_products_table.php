@@ -23,7 +23,6 @@ class CreateProductsTable extends Migration
             $table->string('image',100)->nullable();
             $table->string('status')->nullable()->default(false);
 
-
             $table->integer('user_id')->nullable();
             $table->float('price')->nullable();
             $table->integer('quantity')->default(1);

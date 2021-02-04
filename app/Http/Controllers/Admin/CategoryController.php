@@ -6,11 +6,25 @@ use App\Http\Controllers\Controller;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use mysql_xdevapi\Table;
+
 
 
 class CategoryController extends Controller
 {
+    protected $appends=[ 'parenttree' ];
+
+
+    public static function parenttree($category,$title){
+
+        if ($category->parent_id == 0){
+            return $title;
+        }
+        $parent=Category::find($category->parent_id);
+        $title=$parent->title.' > '. $title;
+        return CategoryController::parenttree($parent,$title);
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -18,8 +32,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $category_data = DB::table('categories')->get()->all();
-       $count = 1;
+        $category_data = Category::with('child')->get();
+        $count = 1;
 
 
        return view('admin.category',['category' => $category_data ,'ct'=> $count] );
@@ -78,7 +92,7 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-        $data = DB::table('categories')->where('id' ,$id)->get()->first();
+        $data = Category::with('child');
        // $id= DB::select('select * from categories where id=?',[$id]);
         //$data=$data[0];
 

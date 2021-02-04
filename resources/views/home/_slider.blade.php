@@ -10,43 +10,22 @@
                     </ol>
 
                     <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="col-sm-6">
-                                <h1><span>E</span>-SHOPPER</h1>
-                                <h2>Free E-Commerce Template</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                <button type="button" class="btn btn-default get">Get it now</button>
-                            </div>
-                            <div class="col-sm-6">
-                                <img src="{{asset('assets')}}/images/home/girl1.jpg" class="girl img-responsive" alt="" />
-                                <img src="{{asset('assets')}}/images/home/pricing.png"  class="pricing" alt="" />
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-sm-6">
-                                <h1><span>E</span>-SHOPPER</h1>
-                                <h2>100% Responsive Design</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                <button type="button" class="btn btn-default get">Get it now</button>
-                            </div>
-                            <div class="col-sm-6">
-                                <img src="{{asset('assets')}}/images/home/girl2.jpg" class="girl img-responsive" alt="" />
-                                <img src="{{asset('assets')}}/images/home/pricing.png"  class="pricing" alt="" />
-                            </div>
-                        </div>
 
-                        <div class="item">
+@foreach($sliderdata as $data)
+                        <div class="item {{$loop->iteration == 1 ? 'active' : '  ' }}">
                             <div class="col-sm-6">
-                                <h1><span>E</span>-SHOPPER</h1>
-                                <h2>Free Ecommerce Template</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                <button type="button" class="btn btn-default get">Get it now</button>
+                                <h1><span>{{$data->title}}</span></h1>
+                                <h2>{{$data->price}}</h2>
+                            <p>{{$data->description}}</p>
+                                <button type="button" class="btn btn-default get">Git</button>
                             </div>
                             <div class="col-sm-6">
-                                <img src="{{asset('assets')}}/images/home/girl3.jpg" class="girl img-responsive" alt="" />
-                                <img src="{{asset('assets')}}/images/home/pricing.png" class="pricing" alt="" />
+                                <img src="{{ Storage::url($data->image) }}" class="girl img-responsive" style="width: 70%;" />
+
                             </div>
                         </div>
+@endforeach
+
 
                     </div>
 
@@ -61,5 +40,15 @@
             </div>
         </div>
     </div>
+
+
+    <script src="{{asset('assets')}}/js/jquery.js"></script>
+    <script src="{{asset('assets')}}/js/bootstrap.min.js"></script>
+    <script src="{{asset('assets')}}/js/jquery.scrollUp.min.js"></script>
+    <script src="{{asset('assets')}}/js/price-range.js"></script>
+    <script src="{{asset('assets')}}/js/jquery.prettyPhoto.js"></script>
+    <script src="{{asset('assets')}}/js/main.js"></script>
+
+
 </section><!--/slider-->
 

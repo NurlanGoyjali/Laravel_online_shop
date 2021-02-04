@@ -27,6 +27,7 @@
                                     <thead class=" text-primary">
                                     <th>Sıra</th>
                                     <th>İsmi</th>
+                                    <th>Kategori</th>
                                     <th>Foto</th>
                                     <th>Adet</th>
                                     <th>Fiyat</th>
@@ -38,6 +39,7 @@
                                         <tr>
                                             <td> {{$ct++}}  </td>
                                             <td>{{ $data->title}}</td>
+                                            <td>{{$data->category->title}}</td>
                                             <td><img src="{{Illuminate\Support\Facades\Storage::url($data->image) }}" height="60"  alt="geldi"></td>
 
                                             <td class="text-primary">
@@ -52,28 +54,28 @@
                                             <td class="text-primary">
                                                 <a href="{{route('admin.image.show',$data->id)}}" >
                                                     <i style="background:#FF69B4;" class="material-icons">show</i>
-                                                    <div class=""></div></button>
+                                                    <div class=""></div>
 
                                                 </a>
 
                                             </td>
 
-                                            </td>
                                             <td class="text-primary">
                                                 <a href="{{route('admin.product.show',$data->id)}}" >
                                                         <i style="background:#FF69B4;" class="material-icons">check_circle</i>
-                                                        <div ></div></button>
+                                                        <div ></div>
 
                                                 </a>
 
                                                 <a href="{{route('admin.product.destroy',$data->id)}}" onclick = "return confirm('Silemmi?')" >
                                                         <i class="material-icons">restore_from_trash</i>
-                                                        <div ></div></button>  </a>
+                                                        <div ></div>
+                                                </a>
 
 
                                                 <a href="{{route('admin.product.update',$data->id)}}" >
                                                         <i style="background:#FF69B4;" class="material-icons">update</i>
-                                                        <div class=""></div></button>
+                                                        <div class=""></div>
 
                                                 </a>
                                             </td>

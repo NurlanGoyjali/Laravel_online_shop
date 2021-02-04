@@ -20,12 +20,12 @@ class CreateCategoriesTable extends Migration
             $table->integer('parent_id')->default(0);
 
             $table->string('title',100);
-            $table->string('keywords')->nullable();
-            $table->string('description')->nullable();
+            $table->string('keywords',100)->nullable();
+            $table->string('description',100)->nullable();
 
             $table->string('slug',50)->nullable();
             $table->string('image',100)->nullable();
-            $table->string('status')->nullable()->default('false');
+            $table->string('status',5)->nullable()->default('false');
 
 
         });

@@ -32,18 +32,29 @@
                         <p>Product</p>
                     </a>
                 </li>
+
                 <li class="nav-item ">
-                    <a class="nav-link" href="./icons.html">
-                        <i class="material-icons">bubble_chart</i>
-                        <p>Icons</p>
+                    <a class="nav-link" href="{{route('admin.contact')}}">
+                        <i class="material-icons">Messages</i>
+                        <p>Mesajlar</p>
                     </a>
                 </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="{{route('admin.settings')}}">
+                        <i class="material-icons">settings</i>
+                        <p>Settings</p>
+                    </a>
+                </li>
+
+
                 <li class="nav-item ">
                     <a class="nav-link" href="./map.html">
                         <i class="material-icons">location_ons</i>
                         <p>Maps</p>
                     </a>
                 </li>
+
                 <li class="nav-item ">
                     <a class="nav-link" href="./notifications.html">
                         <i class="material-icons">notifications</i>

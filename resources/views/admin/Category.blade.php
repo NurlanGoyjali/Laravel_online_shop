@@ -26,36 +26,30 @@
                                 <div class="table-responsive">
                                     <table class="table">
                                         <thead class=" text-primary">
-                                        <th>
-                                            ID
-                                        </th>
-                                        <th>
-                                             İsmi
-                                        </th>
-                                        <th>
-                                            Ürün sayı
-                                        </th>
-                                        <th>
-                                            Sil
-                                        </th>
-                                        <th>
-                                            Düzenle
-                                        </th>
-                                        <th>
-                                            Göster
-                                        </th>
+                                        <th>SIRA</th>
+                                        <th>Adı</th>
+                                        <th>Aile</th>
+                                        <th>Ürün Sayı</th>
+                                        <th>Sil</th>
+                                        <th>Düzenle</th>
+                                        <th>Göster</th>
+
+
                                         </thead>
        @foreach($category as $data)
                                         <tbody>
                                         <tr>
-                                            <td>
+                                            <td style="background:#F0F8FF;">
                                                 {{$ct++}}
                                             </td>
                                             <td>
                                                 {{ $data->title}}
                                             </td>
+                                            <td style="background:#F0F8FF;">
+                                                {{ \App\Http\Controllers\Admin\CategoryController::parenttree($data,$data->title)}}
+                                            </td>
                                             <td>
-                                                {{'ürünsayı gelecek'}}
+                                                {{\App\Http\Controllers\Admin\ProductController::NumberOfProduct($data->id)}}
                                             </td>
                                             <td> <a href="{{route('admin.category.destroy',$data->id)}}" onclick = "return confirm('Silemmi?')" >
                                                 <button style="background:#F5F5DC;" type="button" rel="tooltip"  class="btn btn-danger btn-link btn-sm" data-original-title="Remove">
