@@ -2,57 +2,276 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a42abbc-814d-46c2-a527-83e4959e3783" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MessageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Home/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Settings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_14_155736_create_settings_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_14_160626_settings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_204003_create_messages_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_204527_message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_213133_user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/MessageShow.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/Messages.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/Settings.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/AboutUs.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/Contact.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/Referances.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/UserProfile.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/_message.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/92655352-e14d-4bb9-87a6-ad2e95b84e7e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/92655352-e14d-4bb9-87a6-ad2e95b84e7e.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/confirm-password.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/CategoryProducts.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/ProductDetail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/navigation-menu.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/policy.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/terms.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/ApiTokenPermissionsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/AuthenticationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/BrowserSessionsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/CreateApiTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/DeleteAccountTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/DeleteApiTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/EmailVerificationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/PasswordConfirmationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/PasswordResetTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/ProfileInformationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/RegistrationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/TwoFactorAuthenticationSettingsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/UpdatePasswordTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/database/factories/TeamFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/database/factories/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/database/migrations/2020_05_21_300000_create_team_invitations_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/banner.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/checkbox.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/mail/team-invitation.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Contracts/InvitesTeamMembers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Contracts/RemovesTeamMembers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Events/AddingTeam.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Events/InvitingTeamMember.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Events/TeamMemberUpdated.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/PrivacyPolicyController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/TermsOfServiceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Livewire/PrivacyPolicyController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Livewire/TermsOfServiceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/TeamInvitationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/NavigationMenu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/InteractsWithBanner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Mail/TeamInvitation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/TeamInvitation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Jetstream/InviteTeamMember.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Jetstream/RemoveTeamMember.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Models/TeamInvitation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/AuthenticationCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/AuthenticationCardLogo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/Banner.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/Checkbox.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/ValidationErrors.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Auth/ConfirmPassword.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Auth/ForgotPassword.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Auth/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Auth/Register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Auth/ResetPassword.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Auth/TwoFactorChallenge.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Auth/VerifyEmail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/PrivacyPolicy.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/TermsOfService.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Welcome.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/webpack.mix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/app/View/Components/GuestLayout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/auth/confirm-password.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/auth/forgot-password.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/auth/reset-password.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/auth/two-factor-challenge.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/auth/verify-email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/layouts/guest.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/navigation-menu.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/policy.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/terms.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/webpack.mix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/markdown/policy.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/markdown/terms.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/AuthenticationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/EmailVerificationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/PasswordConfirmationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/PasswordResetTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/RegistrationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/ApiTokenPermissionsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/BrowserSessionsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/CreateApiTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/CreateTeamTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/DeleteAccountTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/DeleteApiTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/DeleteTeamTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/InviteTeamMemberTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/LeaveTeamTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/ProfileInformationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/RemoveTeamMemberTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/TwoFactorAuthenticationSettingsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/UpdatePasswordTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/UpdateTeamMemberRoleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/UpdateTeamNameTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/ApiTokenPermissionsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/BrowserSessionsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/CreateApiTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/CreateTeamTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/DeleteAccountTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/DeleteApiTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/DeleteTeamTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/InviteTeamMemberTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/LeaveTeamTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/ProfileInformationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/RemoveTeamMemberTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/TwoFactorAuthenticationSettingsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/UpdatePasswordTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/UpdateTeamMemberRoleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/UpdateTeamNameTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/CompilerEngineForIgnition.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Laravel_Online_Shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Laravel_Online_Shop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/fortify.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/fortify.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_01_191230_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_01_191230_create_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_05_135636_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_05_135636_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_09_080052_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_205339_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_09_082128_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_09_082128_product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/Category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/Category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/CategoryAdd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/CategoryAdd.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/Product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/Product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/ProductImages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/ProductImages.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/api/api-token-manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/api/api-token-manager.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/two-factor-challenge.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/two-factor-challenge.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/delete-user-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/delete-user-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/logout-other-browser-sessions-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/logout-other-browser-sessions-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/config/jetstream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/database/migrations/2020_05_21_100000_create_teams_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/database/migrations/2020_05_21_100000_create_teams_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/database/migrations/2020_05_21_200000_create_team_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/database/migrations/2020_05_21_200000_create_team_user_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/confirms-password.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/confirms-password.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/dropdown.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/input.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/input.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/modal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/modal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/routes/inertia.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/routes/inertia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/routes/livewire.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/routes/livewire.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Actions/RemoveTeamMember.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Actions/UpdateTeamMemberRole.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Actions/UpdateTeamMemberRole.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Actions/ValidateTeamDeletion.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Actions/ValidateTeamDeletion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Console/InstallCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Console/InstallCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Events/TeamEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Events/TeamEvent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Features.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Features.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/HasProfilePhoto.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/HasProfilePhoto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/HasTeams.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/HasTeams.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/ApiTokenController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/ApiTokenController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/CurrentUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/CurrentUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/OtherBrowserSessionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/OtherBrowserSessionsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/TeamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/TeamController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/TeamMemberController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/TeamMemberController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/UserProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/UserProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/ApiTokenManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/ApiTokenManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/CreateTeamForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/CreateTeamForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/LogoutOtherBrowserSessionsForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/LogoutOtherBrowserSessionsForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/NavigationDropdown.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/TeamMemberManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/TeamMemberManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/UpdateProfileInformationForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/UpdateProfileInformationForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/UpdateTeamNameForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/UpdateTeamNameForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Middleware/ShareInertiaData.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Middleware/ShareInertiaData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Jetstream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/JetstreamServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/JetstreamServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Team.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Team.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Fortify/CreateNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Fortify/CreateNewUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Fortify/CreateNewUserWithTeams.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Fortify/CreateNewUserWithTeams.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Jetstream/AddTeamMember.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Jetstream/AddTeamMember.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Jetstream/CreateTeam.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Jetstream/CreateTeam.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Models/Team.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Models/Team.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Models/UserWithTeams.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Models/UserWithTeams.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Providers/JetstreamWithTeamsServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Providers/JetstreamWithTeamsServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/View/Components/GuestLayout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/ConfirmsPassword.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/ConfirmsPassword.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/Dropdown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/Dropdown.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/Input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/Input.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/Modal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/Modal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Layouts/AppLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Layouts/AppLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Mixins/InteractsWithErrorBags.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/API/ApiTokenManager.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/API/ApiTokenManager.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/API/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/API/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/DeleteUserForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/DeleteUserForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/LogoutOtherBrowserSessionsForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/LogoutOtherBrowserSessionsForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/Show.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/Show.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/TwoFactorAuthenticationForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/TwoFactorAuthenticationForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/UpdatePasswordForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/UpdatePasswordForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/UpdateProfileInformationForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/UpdateProfileInformationForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/Create.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/Create.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/CreateTeamForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/CreateTeamForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/DeleteTeamForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/DeleteTeamForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/TeamMemberManager.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/TeamMemberManager.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/UpdateTeamNameForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/UpdateTeamNameForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/api/api-token-manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/api/api-token-manager.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/navigation-dropdown.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/profile/delete-user-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/profile/delete-user-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/profile/logout-other-browser-sessions-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/profile/logout-other-browser-sessions-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/profile/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/profile/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/teams/team-member-manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/teams/team-member-manager.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/tailwind.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/views/auth/forgot-password.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/views/auth/login.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/views/auth/register.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/views/auth/reset-password.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/views/auth/two-factor-challenge.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/views/auth/verify-email.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/views/layouts/guest.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/webpack.mix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/sanctum/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/sanctum/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/sanctum/src/Guard.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/sanctum/src/Guard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/sanctum/src/Http/Controllers/CsrfCookieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/sanctum/src/Http/Controllers/CsrfCookieController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/config/livewire.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/config/livewire.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/dist/livewire.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/dist/livewire.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/dist/livewire.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/dist/livewire.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/dist/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/dist/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/js/component/LoadingStates.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/js/component/LoadingStates.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/js/component/SupportAlpine.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/js/component/SupportAlpine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/js/component/SyncBrowserHistory.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/js/component/SyncBrowserHistory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/js/component/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/js/component/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/CopyCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/CopyCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/DeleteCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/DeleteCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/FileManipulationCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/FileManipulationCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/MakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/MakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/MoveCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/MoveCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/CompilerEngine.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Component.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Component.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentConcerns/HandlesActions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentConcerns/HandlesActions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentConcerns/InteractsWithProperties.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentConcerns/InteractsWithProperties.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentConcerns/PerformsRedirects.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentConcerns/PerformsRedirects.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentConcerns/ValidatesInput.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentConcerns/ValidatesInput.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Controllers/CanPretendToBeAFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Controllers/CanPretendToBeAFile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Controllers/FilePreviewHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Controllers/FilePreviewHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Controllers/HttpConnectionHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Controllers/HttpConnectionHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/FileUploadConfiguration.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/FileUploadConfiguration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/GenerateSignedUploadUrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/GenerateSignedUploadUrl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/HydrationMiddleware/CallPropertyHydrationHooks.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/HydrationMiddleware/CallPropertyHydrationHooks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/HydrationMiddleware/HydratePublicProperties.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/HydrationMiddleware/HydratePublicProperties.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/LifecycleManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/LifecycleManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/LivewireManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/LivewireManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/LivewireServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/LivewireServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/LivewireViewCompilerEngine.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/LivewireViewCompilerEngine.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Macros/ViewMacros.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Macros/ViewMacros.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Macros/livewire-view-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Macros/livewire-view-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Redirector.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Redirector.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/RenameMe/SupportBrowserHistory.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/RenameMe/SupportBrowserHistory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/RenameMe/SupportRedirects.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/RenameMe/SupportRedirects.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/TemporaryUploadedFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/TemporaryUploadedFile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Testing/TestableLivewire.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Testing/TestableLivewire.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +366,6 @@
       <path value="$PROJECT_DIR$/vendor/brick/math" />
       <path value="$PROJECT_DIR$/vendor/pragmarx/google2fa" />
       <path value="$PROJECT_DIR$/vendor/laravel/framework" />
-      <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
       <path value="$PROJECT_DIR$/vendor/laravel/jetstream" />
       <path value="$PROJECT_DIR$/vendor/laravel/fortify" />
       <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
@@ -192,6 +410,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
       <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
     </include_path>
   </component>
   <component name="ProjectId" id="1lLqgDjwOMgZFgRKfT6pOxMMgZc" />

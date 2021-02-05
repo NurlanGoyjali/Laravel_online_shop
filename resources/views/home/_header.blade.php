@@ -97,22 +97,10 @@
                             <li class="dropdown"><a href="#">Kategoriler<i class="fa fa-angle-down"></i></a>
                                 <ul role="menu" class="sub-menu">
                                     @foreach($data as $rs)
-                                    <li><a href="{{$rs->id}}">{{$rs->title}}</a></li>
-                                    @if($rs->subcategory)
-                                        {{ $children = $rs->subcategory }}
-                                            <li>yazdı {{$subcategory->title}}</li>
 
-                                        <span>
-                                            @foreach($children as $subcategory)
-                                                @if(count($subcategory->children))
-                                                    <li>{{$subcategory->title}}</li>
-                                                    @include('home._header',['children' =>$subcategory->child])
-                                                @else
-                                                    <li><a href="#">{{$subcategory->title}}</a> </li>
-                                                @endif
-                                            @endforeach
-                                        </span>
-                                        @endif
+                            <li><a href="{{route('categoryproducts',$rs->id)}}">{{$rs->title}}</a> </li>
+
+
 
                                     @endforeach
                                 </ul>

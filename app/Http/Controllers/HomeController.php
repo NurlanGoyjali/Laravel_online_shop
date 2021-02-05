@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Image;
 use App\Models\Message;
 use App\Models\Category;
 use App\Models\Product;
@@ -30,12 +31,28 @@ class HomeController extends Controller
 
     public function index(){
 
-
+    $datafor = Product::limit(6)->get();
     $data = Product::limit(3)->get();
-      return view('home.index',['sliderdata'=>$data]);
+    return view('home.index',['sliderdata'=>$data,'cdata'=>$datafor]);
 
     }
 
+    public function CategoryPtoducts($id){
+        $data = Product::where('category_id',$id)->get();
+        return view('home.CategoryProducts',['cdata'=>$data]) ;
+
+    }
+
+
+
+    public function Ptoduct($id){
+
+    $data = Product::find($id);
+    $image= Image::where('product_id',$id)->get();
+
+    return view('home.ProductDetail',['product'=>$data,'img'=>$image]) ;
+
+}
 
     public function login(){
 

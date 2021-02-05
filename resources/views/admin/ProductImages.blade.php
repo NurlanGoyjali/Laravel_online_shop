@@ -17,9 +17,6 @@
                         <div class="card-header card-header-primary">
                             <h4 class="card-title "  style="float: left"  >{{$product->title }} :: Ürününün Resim Galerisi</h4>
 
-
-
-
                                 <button type="submit" class="btn btn-primary" style="float: right; background:#3f51b5;">Ekle</button>
                                 <br>
                                 <p >Foto eklemek için verileri girin</p>

@@ -80,7 +80,8 @@ Route::middleware('auth')->prefix('myuser')->namespace('myuser')->group(function
 Route::post('/loginchk', [HomeController::class , 'loginchk' ])->name('loginchk');
 Route::get('/', [HomeController::class , 'index' ])->name('home.page');
 
-
+Route::get('/urunler/{id}',[HomeController::class,'CategoryPtoducts'])->name('categoryproducts');
+Route::get('/urun/{id}',[HomeController::class,'Ptoduct'])->name('product');
 Route::get('/hakkımızda', [\App\Http\Controllers\HomeController::class , 'AboutUs' ])->name('aboutus');;
 Route::get('/referanslar', [\App\Http\Controllers\HomeController::class , 'References' ])->name('references');;
 Route::match(array('GET','POST'),'/contact', [\App\Http\Controllers\HomeController::class , 'Contact' ])->name('contact');
