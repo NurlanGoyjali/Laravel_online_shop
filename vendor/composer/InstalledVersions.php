@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'df4b58467b6b477b744c23c9898cfd41e557f23a',
+    'reference' => '313fa97a94a912fbc0a7732fddd9929c7e751240',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -522,7 +522,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'df4b58467b6b477b744c23c9898cfd41e557f23a',
+      'reference' => '313fa97a94a912fbc0a7732fddd9929c7e751240',
     ),
     'laravel/sanctum' => 
     array (
@@ -571,12 +571,12 @@ private static $installed = array (
     ),
     'livewire/livewire' => 
     array (
-      'pretty_version' => 'v2.3.15',
-      'version' => '2.3.15.0',
+      'pretty_version' => 'v2.3.16',
+      'version' => '2.3.16.0',
       'aliases' => 
       array (
       ),
-      'reference' => '1d76638b54a0f952f4f0334a33dfcfefc456ea4a',
+      'reference' => '8f027e9bc5ad1f08f0c900244e6fdb9966f7a287',
     ),
     'mobiledetect/mobiledetectlib' => 
     array (

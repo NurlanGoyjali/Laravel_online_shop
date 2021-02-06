@@ -9,11 +9,21 @@ use Illuminate\Support\Facades\DB;
 
 class Product extends Model
 {
+
     use HasFactory;
 //bular işdemir tezden bax
     public function category()
     {
         return $this->belongsTo(Category::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+    public function review()
+    {
+        return $this->hasMany(Review::class);
     }
 
 

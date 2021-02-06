@@ -7,9 +7,11 @@ use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
-
+date_default_timezone_set('Europe/Istanbul');
 class ProductController extends Controller
 {
+
+
     /**
      * Display a listing of the resource.
      *
@@ -30,6 +32,7 @@ class ProductController extends Controller
      */
     public function create(Request $request)
     {
+        $data=date('Y-m-d H:i:s');
         if ($request->isMethod('POST')){
 
             DB::table('products')->insert([
@@ -42,6 +45,9 @@ class ProductController extends Controller
                 'image'=> Storage::putFile('images',$request->file('Image') ),
                 'status'=> $request->input('Status'),
                 'detail'=> $request->input('detail'),
+                'created_at' =>$data,
+                'updated_at' =>$data,
+
             ]);
 
             echo 'başariyla eklendi';
@@ -99,7 +105,7 @@ class ProductController extends Controller
      * @return \Illuminate\Http\RedirectResponse
      */
     public function update(Request $request,$id)
-    {
+    { $data=date('Y-m-d H:i:s');
         if ($request->isMethod('post')){
 
         DB::table('products')->where('id',$id)->update([
@@ -112,6 +118,7 @@ class ProductController extends Controller
            // 'image'=> Storage::putFile('images',$request->file('image') ),
             //'status'=> $request->input('Status'),
             'detail'=> $request->input('Detail'),
+            'updated_at' =>$data,
 
 
         ]);

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Livewire\Review;
 use App\Models\Image;
 use App\Models\Message;
 use App\Models\Category;
@@ -42,10 +43,16 @@ class HomeController extends Controller
         return view('home.CategoryProducts',['cdata'=>$data]) ;
 
     }
+    public function getproduct(Request $request){
+        $data = Product::where('title',$request->input('search'))->first();
+
+        return redirect()->route('product',$data->id);
+
+    }
 
 
 
-    public function Ptoduct($id){
+    public function Product($id){
 
     $data = Product::find($id);
     $image= Image::where('product_id',$id)->get();
@@ -53,6 +60,14 @@ class HomeController extends Controller
     return view('home.ProductDetail',['product'=>$data,'img'=>$image]) ;
 
 }
+
+    public function review($id){
+
+        $data = \App\Models\Review::where('user_id',$id)->get();
+
+        return view('home.Reviews',['revdata'=>$data]);
+
+    }
 
     public function login(){
 

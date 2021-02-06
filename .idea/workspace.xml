@@ -2,276 +2,495 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a42abbc-814d-46c2-a527-83e4959e3783" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/confirm-password.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/CategoryProducts.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/ProductDetail.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/navigation-menu.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/policy.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/terms.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/ApiTokenPermissionsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/AuthenticationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/BrowserSessionsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/CreateApiTokenTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/DeleteAccountTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/DeleteApiTokenTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/EmailVerificationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/PasswordConfirmationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/PasswordResetTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/ProfileInformationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/RegistrationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/TwoFactorAuthenticationSettingsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/UpdatePasswordTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/database/factories/TeamFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/database/factories/UserFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/database/migrations/2020_05_21_300000_create_team_invitations_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/banner.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/checkbox.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/mail/team-invitation.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Contracts/InvitesTeamMembers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Contracts/RemovesTeamMembers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Events/AddingTeam.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Events/InvitingTeamMember.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Events/TeamMemberUpdated.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/PrivacyPolicyController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/TermsOfServiceController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Livewire/PrivacyPolicyController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Livewire/TermsOfServiceController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/TeamInvitationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/NavigationMenu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/InteractsWithBanner.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Mail/TeamInvitation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/TeamInvitation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Jetstream/InviteTeamMember.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Jetstream/RemoveTeamMember.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Models/TeamInvitation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/AuthenticationCard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/AuthenticationCardLogo.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/Banner.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/Checkbox.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/ValidationErrors.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Auth/ConfirmPassword.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Auth/ForgotPassword.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Auth/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Auth/Register.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Auth/ResetPassword.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Auth/TwoFactorChallenge.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Auth/VerifyEmail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/PrivacyPolicy.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/TermsOfService.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Welcome.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/routes/web.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/webpack.mix.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/app/View/Components/GuestLayout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/auth/confirm-password.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/auth/forgot-password.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/auth/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/auth/reset-password.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/auth/two-factor-challenge.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/auth/verify-email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/layouts/guest.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/navigation-menu.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/policy.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/terms.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/webpack.mix.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/markdown/policy.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/markdown/terms.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/AuthenticationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/EmailVerificationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/PasswordConfirmationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/PasswordResetTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/RegistrationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/ApiTokenPermissionsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/BrowserSessionsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/CreateApiTokenTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/CreateTeamTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/DeleteAccountTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/DeleteApiTokenTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/DeleteTeamTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/InviteTeamMemberTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/LeaveTeamTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/ProfileInformationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/RemoveTeamMemberTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/TwoFactorAuthenticationSettingsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/UpdatePasswordTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/UpdateTeamMemberRoleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/inertia/UpdateTeamNameTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/ApiTokenPermissionsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/BrowserSessionsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/CreateApiTokenTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/CreateTeamTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/DeleteAccountTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/DeleteApiTokenTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/DeleteTeamTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/InviteTeamMemberTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/LeaveTeamTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/ProfileInformationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/RemoveTeamMemberTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/TwoFactorAuthenticationSettingsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/UpdatePasswordTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/UpdateTeamMemberRoleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/tests/livewire/UpdateTeamNameTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/CompilerEngineForIgnition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Laravel_Online_Shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Laravel_Online_Shop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Review.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Search.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Review.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_05_141358_create_reviews_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_05_175506_review.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/Reviews.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/review.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/92655352-e14d-4bb9-87a6-ad2e95b84e7e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/92655352-e14d-4bb9-87a6-ad2e95b84e7e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/fortify.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/fortify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/purgecss" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/purgecss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/purgecss.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/purgecss.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/purgecss.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/purgecss.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/lib/postcss-purgecss.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/lib/postcss-purgecss.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/lib/postcss-purgecss.esm.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/lib/postcss-purgecss.esm.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/lib/postcss-purgecss.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/lib/postcss-purgecss.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/lib/postcss-purgecss.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/lib/postcss-purgecss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/docs/api/assets/scripts.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/docs/api/assets/styles.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/docs/api/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/docs/architecture.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/docs/guidelines/plugin.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/docs/guidelines/runner.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/docs/source-maps.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/docs/syntax.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/at-rule.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/comment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/css-syntax-error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/declaration.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/input.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/lazy-result.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/map-generator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/postcss.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/postcss.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/previous-map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/processor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/result.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/root.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/rule.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/stringifier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/stringify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/terminal-highlight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/tokenize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/vendor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/warn-once.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/lib/warning.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/postcss/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/dist/source-map.debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/dist/source-map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/dist/source-map.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/dist/source-map.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/lib/array-set.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/lib/base64-vlq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/lib/base64.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/lib/binary-search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/lib/mapping-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/lib/quick-sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/lib/source-map-consumer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/lib/source-map-generator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/lib/source-node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/lib/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/source-map.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/source-map/source-map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/supports-color/browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/supports-color/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/supports-color/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/supports-color/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/node_modules/supports-color/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@fullhuman/postcss-purgecss/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@material-ui/core/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@material-ui/core/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@material-ui/core/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@material-ui/core/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@material-ui/core/esm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@material-ui/core/esm/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@material-ui/core/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@material-ui/core/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@material-ui/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@material-ui/core/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@material-ui/core/umd/material-ui.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@material-ui/core/umd/material-ui.development.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@material-ui/core/umd/material-ui.production.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@material-ui/core/umd/material-ui.production.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@material-ui/styles/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@material-ui/styles/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@material-ui/styles/esm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@material-ui/styles/esm/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@material-ui/styles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@material-ui/styles/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@material-ui/styles/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@material-ui/styles/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@material-ui/system/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@material-ui/system/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@material-ui/system/es/spacing.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@material-ui/system/es/spacing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@material-ui/system/esm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@material-ui/system/esm/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@material-ui/system/esm/spacing.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@material-ui/system/esm/spacing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@material-ui/system/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@material-ui/system/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@material-ui/system/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@material-ui/system/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@material-ui/system/spacing.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@material-ui/system/spacing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@tailwindcss/typography/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@tailwindcss/typography/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@tailwindcss/typography/dist/typography.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@tailwindcss/typography/dist/typography.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@tailwindcss/typography/dist/typography.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@tailwindcss/typography/dist/typography.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@tailwindcss/typography/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@tailwindcss/typography/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@tailwindcss/typography/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@tailwindcss/typography/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@tailwindcss/typography/src/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@tailwindcss/typography/src/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/alpinejs/README.de.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/alpinejs/README.de.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/alpinejs/README.es.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/alpinejs/README.es.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/alpinejs/README.id.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/alpinejs/README.id.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/alpinejs/README.ja.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/alpinejs/README.ja.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/alpinejs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/alpinejs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/alpinejs/README.pt.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/alpinejs/README.pt.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/alpinejs/README.ru.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/alpinejs/README.ru.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/alpinejs/README.zh-TW.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/alpinejs/README.zh-TW.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/alpinejs/dist/alpine-ie11.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/alpinejs/dist/alpine-ie11.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/alpinejs/dist/alpine.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/alpinejs/dist/alpine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/alpinejs/examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/alpinejs/examples/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/alpinejs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/alpinejs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/alpinejs/src/component.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/alpinejs/src/component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/alpinejs/src/directives/bind.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/alpinejs/src/directives/bind.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/alpinejs/src/directives/for.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/alpinejs/src/directives/for.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/alpinejs/src/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/alpinejs/src/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/alpinejs/test/bind.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/alpinejs/test/bind.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/alpinejs/test/for.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/alpinejs/test/for.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/bin/autoprefixer" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/bin/autoprefixer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/data/prefixes.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/data/prefixes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/at-rule.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/at-rule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/autoprefixer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/autoprefixer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/brackets.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/brackets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/browsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/browsers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/declaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/declaration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/align-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/align-content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/align-items.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/align-items.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/align-self.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/align-self.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/animation.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/animation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/appearance.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/appearance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/backdrop-filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/backdrop-filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/background-clip.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/background-clip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/background-size.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/background-size.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/block-logical.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/block-logical.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/border-image.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/border-image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/border-radius.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/border-radius.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/break-props.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/break-props.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/color-adjust.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/color-adjust.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/cross-fade.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/cross-fade.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/display-flex.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/display-flex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/display-grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/display-grid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/filter-value.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/filter-value.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/flex-basis.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/flex-basis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/flex-direction.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/flex-direction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/flex-flow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/flex-flow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/flex-grow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/flex-grow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/flex-shrink.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/flex-shrink.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/flex-spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/flex-spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/flex-wrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/flex-wrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/flex.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/flex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/fullscreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/fullscreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/gradient.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/gradient.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-area.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-area.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-column-align.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-column-align.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-end.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-end.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-row-align.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-row-align.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-row-column.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-row-column.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-rows-columns.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-rows-columns.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-start.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-start.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-template-areas.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-template-areas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-template.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/grid-utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/image-rendering.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/image-rendering.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/image-set.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/image-set.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/inline-logical.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/inline-logical.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/intrinsic.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/intrinsic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/justify-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/justify-content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/mask-border.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/mask-border.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/mask-composite.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/mask-composite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/overscroll-behavior.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/overscroll-behavior.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/pixelated.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/pixelated.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/place-self.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/place-self.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/placeholder-shown.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/placeholder-shown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/placeholder.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/placeholder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/text-decoration-skip-ink.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/text-decoration-skip-ink.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/text-decoration.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/text-decoration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/text-emphasis-position.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/text-emphasis-position.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/transform-decl.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/transform-decl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/user-select.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/user-select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/writing-mode.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/hacks/writing-mode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/old-selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/old-selector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/old-value.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/old-value.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/prefixer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/prefixer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/prefixes.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/prefixes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/processor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/processor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/resolution.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/resolution.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/selector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/supports.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/supports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/transition.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/transition.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/lib/value.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/lib/value.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-camel-case/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-camel-case/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-camel-case/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-camel-case/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/dist/jss-plugin-default-unit.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/dist/jss-plugin-default-unit.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/dist/jss-plugin-default-unit.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/dist/jss-plugin-default-unit.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/dist/jss-plugin-default-unit.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/dist/jss-plugin-default-unit.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/dist/jss-plugin-default-unit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/dist/jss-plugin-default-unit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/dist/jss-plugin-default-unit.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/dist/jss-plugin-default-unit.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/dist/jss-plugin-default-unit.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/dist/jss-plugin-default-unit.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/src/defaultUnits.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/src/defaultUnits.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-default-unit/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-global/dist/jss-plugin-global.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-global/dist/jss-plugin-global.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-global/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-global/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-global/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-global/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-nested/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-nested/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-nested/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-nested/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-props-sort/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-props-sort/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-props-sort/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-props-sort/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-rule-value-function/dist/jss-plugin-rule-value-function.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-rule-value-function/dist/jss-plugin-rule-value-function.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-rule-value-function/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-rule-value-function/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-rule-value-function/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-rule-value-function/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-vendor-prefixer/dist/jss-plugin-vendor-prefixer.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-vendor-prefixer/dist/jss-plugin-vendor-prefixer.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-vendor-prefixer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-vendor-prefixer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss-plugin-vendor-prefixer/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss-plugin-vendor-prefixer/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss/dist/jss.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss/dist/jss.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss/dist/jss.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss/dist/jss.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss/dist/jss.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss/dist/jss.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss/dist/jss.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss/dist/jss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss/dist/jss.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss/dist/jss.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jss/src/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jss/src/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/normalize.css/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/normalize.css/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/normalize.css/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/normalize.css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/normalize.css/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object-hash/dist/object_hash.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-hash/dist/object_hash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object-hash/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-hash/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object-hash/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-hash/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss-js/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss-js/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss-js/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss-js/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss-js/async.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss-js/async.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss-js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss-js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss-js/objectifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss-js/objectifier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss-js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss-js/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss-js/parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss-js/parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss-js/process-result.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss-js/process-result.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss-js/sync.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss-js/sync.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss-nested/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss-nested/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss-nested/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss-nested/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss-nested/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss-nested/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss-nested/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss-nested/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss-nested/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss-nested/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/bin/purgecss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/lib/purgecss.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/lib/purgecss.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/lib/purgecss.esm.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/lib/purgecss.esm.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/lib/purgecss.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/lib/purgecss.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/lib/purgecss.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/lib/purgecss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/commander/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/commander/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/commander/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/commander/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/commander/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/commander/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/commander/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/commander/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/commander/typings/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/commander/typings/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/docs/api/assets/scripts.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/docs/api/assets/styles.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/docs/api/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/docs/architecture.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/docs/guidelines/plugin.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/docs/guidelines/runner.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/docs/source-maps.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/docs/syntax.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/at-rule.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/at-rule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/css-syntax-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/css-syntax-error.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/declaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/declaration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/input.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/lazy-result.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/lazy-result.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/map-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/map-generator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/parse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/postcss.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/postcss.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/postcss.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/postcss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/previous-map.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/previous-map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/processor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/processor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/result.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/result.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/root.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/root.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/rule.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/rule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/stringifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/stringifier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/stringify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/terminal-highlight.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/terminal-highlight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/tokenize.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/tokenize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/vendor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/warn-once.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/warn-once.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/warning.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/lib/warning.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/node_modules/postcss/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/supports-color/browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/supports-color/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/supports-color/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/supports-color/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/node_modules/supports-color/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/purgecss/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/purgecss/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reduce-css-calc/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/reduce-css-calc/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reduce-css-calc/dist/lib/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/reduce-css-calc/dist/lib/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reduce-css-calc/dist/lib/stringifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/reduce-css-calc/dist/lib/stringifier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reduce-css-calc/dist/parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/reduce-css-calc/dist/parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reduce-css-calc/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/reduce-css-calc/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/dist/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/base.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/dist/base.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/components.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/dist/components.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/components.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/dist/components.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/tailwind-experimental.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/dist/tailwind-experimental.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/tailwind-experimental.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/dist/tailwind-experimental.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/dist/tailwind.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/tailwind.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/dist/tailwind.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/utilities.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/dist/utilities.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/utilities.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/dist/utilities.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/cli/commands/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/cli/commands/init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/corePluginList.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/corePluginList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/featureFlags.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/featureFlags.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/flagged/additionalBreakpoint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/flagged/applyComplexClasses.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/flagged/darkModeVariant.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/flagged/darkModeVariantPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/flagged/defaultLineHeights.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/flagged/extendedFontSizeScale.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/flagged/extendedSpacingScale.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/flagged/standardFontWeights.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/flagged/uniformColorPalette.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/lib/evaluateTailwindFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/lib/evaluateTailwindFunctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/lib/purgeUnusedStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/lib/purgeUnusedStyles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/lib/substituteClassApplyAtRules.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/lib/substituteClassApplyAtRules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/lib/substituteVariantsAtRules.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/lib/substituteVariantsAtRules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/animation.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/animation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/backgroundClip.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/backgroundClip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/backgroundColor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/backgroundColor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/backgroundImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/backgroundImage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/backgroundOpacity.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/backgroundOpacity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/backgroundPosition.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/backgroundPosition.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/backgroundSize.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/backgroundSize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/borderColor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/borderColor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/borderOpacity.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/borderOpacity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/borderRadius.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/borderRadius.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/borderWidth.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/borderWidth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/boxShadow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/boxShadow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/css/preflight.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/css/preflight.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/cursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/cursor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/display.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/display.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/divideColor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/divideColor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/divideOpacity.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/divideOpacity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/divideStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/divideStyle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/divideWidth.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/divideWidth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/fill.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/fill.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/flex.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/flex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/flexGrow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/flexGrow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/flexShrink.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/flexShrink.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/flexWrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/flexWrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/float.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/float.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/fontFamily.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/fontFamily.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/fontSize.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/fontSize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/fontVariantNumeric.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/fontVariantNumeric.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/fontWeight.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/fontWeight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gap.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gradientColorStops.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gradientColorStops.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridAutoColumns.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridAutoColumns.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridAutoFlow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridAutoFlow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridAutoRows.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridAutoRows.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridColumn.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridColumn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridColumnEnd.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridColumnEnd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridColumnStart.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridColumnStart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridRow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridRowEnd.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridRowEnd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridRowStart.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridRowStart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridTemplateColumns.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridTemplateColumns.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridTemplateRows.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/gridTemplateRows.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/height.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/height.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/inset.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/inset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/justifyItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/justifyItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/justifySelf.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/justifySelf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/letterSpacing.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/letterSpacing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/lineHeight.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/lineHeight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/listStyleType.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/listStyleType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/margin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/margin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/maxHeight.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/maxHeight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/maxWidth.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/maxWidth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/minHeight.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/minHeight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/minWidth.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/minWidth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/objectFit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/objectFit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/objectPosition.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/objectPosition.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/opacity.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/opacity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/outline.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/outline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/overflow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/overflow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/overscrollBehavior.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/overscrollBehavior.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/padding.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/padding.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/placeContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/placeContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/placeItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/placeItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/placeSelf.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/placeSelf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/placeholderColor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/placeholderColor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/placeholderOpacity.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/placeholderOpacity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/position.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/position.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/preflight.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/preflight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/rotate.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/rotate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/scale.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/scale.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/skew.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/skew.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/space.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/space.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/stroke.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/stroke.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/strokeWidth.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/strokeWidth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/textColor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/textColor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/textOpacity.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/textOpacity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/transform.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/transform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/transitionDuration.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/transitionDuration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/transitionProperty.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/transitionProperty.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/transitionTimingFunction.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/transitionTimingFunction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/translate.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/translate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/whitespace.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/whitespace.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/width.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/width.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/wordBreak.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/wordBreak.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/zIndex.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/plugins/zIndex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/processTailwindFeatures.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/processTailwindFeatures.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/util/createPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/util/createPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/util/createUtilityPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/util/createUtilityPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/util/flattenColorPalette.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/util/flattenColorPalette.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/util/getAllConfigs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/util/getAllConfigs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/util/processPlugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/util/processPlugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/util/resolveConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/util/resolveConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/util/useMemo.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/util/useMemo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/util/withAlphaVariable.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/util/withAlphaVariable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/copy-sync/copy-sync.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/copy-sync/copy-sync.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/copy/copy.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/copy/copy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/empty/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/empty/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/ensure/file.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/ensure/file.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/ensure/symlink-paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/ensure/symlink-paths.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/ensure/symlink-type.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/ensure/symlink-type.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/fs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/fs/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/json/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/json/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/json/jsonfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/json/jsonfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/json/output-json-sync.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/json/output-json-sync.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/json/output-json.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/json/output-json.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/mkdirs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/mkdirs/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/mkdirs/mkdirs-sync.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/mkdirs/mkdirs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/mkdirs/win32.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/remove/rimraf.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/remove/rimraf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/util/buffer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/util/stat.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/util/stat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/util/utimes.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/lib/util/utimes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/fs-extra/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/scripts/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/scripts/build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/scripts/rebuildFixtures.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/scripts/rebuildFixtures.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/stubs/defaultConfig.stub.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/stubs/defaultConfig.stub.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/stubs/defaultPostCssConfig.stub.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/stubs/defaultPostCssConfig.stub.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/stubs/simpleConfig.stub.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/stubs/simpleConfig.stub.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/ProductImages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/ProductImages.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/api/api-token-manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/api/api-token-manager.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/two-factor-challenge.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/two-factor-challenge.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/ProductDetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/ProductDetail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/UserProfile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/UserProfile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/delete-user-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/delete-user-form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/logout-other-browser-sessions-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/logout-other-browser-sessions-form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/config/jetstream.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/database/migrations/2020_05_21_100000_create_teams_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/database/migrations/2020_05_21_100000_create_teams_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/database/migrations/2020_05_21_200000_create_team_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/database/migrations/2020_05_21_200000_create_team_user_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/confirms-password.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/confirms-password.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/dropdown.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/input.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/input.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/modal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/resources/views/components/modal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/routes/inertia.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/routes/inertia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/routes/livewire.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/routes/livewire.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Actions/RemoveTeamMember.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Actions/UpdateTeamMemberRole.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Actions/UpdateTeamMemberRole.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Actions/ValidateTeamDeletion.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Actions/ValidateTeamDeletion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Console/InstallCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Console/InstallCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Events/TeamEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Events/TeamEvent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Features.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Features.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/HasProfilePhoto.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/HasProfilePhoto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/HasTeams.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/HasTeams.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/ApiTokenController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/ApiTokenController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/CurrentUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/CurrentUserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/OtherBrowserSessionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/OtherBrowserSessionsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/TeamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/TeamController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/TeamMemberController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/TeamMemberController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/UserProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Controllers/Inertia/UserProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/ApiTokenManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/ApiTokenManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/CreateTeamForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/CreateTeamForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/LogoutOtherBrowserSessionsForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/LogoutOtherBrowserSessionsForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/NavigationDropdown.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/TeamMemberManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/TeamMemberManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/UpdateProfileInformationForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/UpdateProfileInformationForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/UpdateTeamNameForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Livewire/UpdateTeamNameForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Middleware/ShareInertiaData.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Http/Middleware/ShareInertiaData.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Jetstream.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/JetstreamServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/JetstreamServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Team.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/src/Team.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Fortify/CreateNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Fortify/CreateNewUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Fortify/CreateNewUserWithTeams.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Fortify/CreateNewUserWithTeams.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Jetstream/AddTeamMember.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Jetstream/AddTeamMember.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Jetstream/CreateTeam.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Actions/Jetstream/CreateTeam.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Models/Team.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Models/Team.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Models/UserWithTeams.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Models/UserWithTeams.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Providers/JetstreamWithTeamsServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/Providers/JetstreamWithTeamsServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/app/View/Components/GuestLayout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/ConfirmsPassword.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/ConfirmsPassword.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/Dropdown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/Dropdown.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/Input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/Input.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/Modal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Jetstream/Modal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Layouts/AppLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Layouts/AppLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Mixins/InteractsWithErrorBags.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/API/ApiTokenManager.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/API/ApiTokenManager.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/API/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/API/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/DeleteUserForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/DeleteUserForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/LogoutOtherBrowserSessionsForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/LogoutOtherBrowserSessionsForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/Show.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/Show.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/TwoFactorAuthenticationForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/TwoFactorAuthenticationForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/UpdatePasswordForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/UpdatePasswordForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/UpdateProfileInformationForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Profile/UpdateProfileInformationForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/Create.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/Create.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/CreateTeamForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/CreateTeamForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/DeleteTeamForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/DeleteTeamForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/TeamMemberManager.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/TeamMemberManager.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/UpdateTeamNameForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/Pages/Teams/UpdateTeamNameForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/inertia/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/api/api-token-manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/api/api-token-manager.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/navigation-dropdown.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/profile/delete-user-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/profile/delete-user-form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/profile/logout-other-browser-sessions-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/profile/logout-other-browser-sessions-form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/profile/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/profile/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/teams/team-member-manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/resources/views/teams/team-member-manager.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/livewire/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/views/auth/forgot-password.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/views/auth/login.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/views/auth/register.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/views/auth/reset-password.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/views/auth/two-factor-challenge.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/views/auth/verify-email.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/resources/views/layouts/guest.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/webpack.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/jetstream/stubs/webpack.mix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/sanctum/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/sanctum/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/sanctum/src/Guard.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/sanctum/src/Guard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/sanctum/src/Http/Controllers/CsrfCookieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/sanctum/src/Http/Controllers/CsrfCookieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/config/livewire.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/config/livewire.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/dist/livewire.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/dist/livewire.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/dist/livewire.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/dist/livewire.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/dist/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/dist/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/js/component/LoadingStates.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/js/component/LoadingStates.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/js/component/SupportAlpine.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/js/component/SupportAlpine.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/js/component/SyncBrowserHistory.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/js/component/SyncBrowserHistory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/js/component/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/js/component/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/CopyCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/CopyCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/DeleteCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/DeleteCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/FileManipulationCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/FileManipulationCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/MakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/MakeCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/MoveCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Commands/MoveCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/CompilerEngine.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Component.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Component.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentConcerns/HandlesActions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentConcerns/HandlesActions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentConcerns/InteractsWithProperties.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentConcerns/InteractsWithProperties.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentConcerns/PerformsRedirects.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentConcerns/PerformsRedirects.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentConcerns/ValidatesInput.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentConcerns/ValidatesInput.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Controllers/CanPretendToBeAFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Controllers/CanPretendToBeAFile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Controllers/FilePreviewHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Controllers/FilePreviewHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Controllers/HttpConnectionHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Controllers/HttpConnectionHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/FileUploadConfiguration.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/FileUploadConfiguration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/GenerateSignedUploadUrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/GenerateSignedUploadUrl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/HydrationMiddleware/CallPropertyHydrationHooks.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/HydrationMiddleware/CallPropertyHydrationHooks.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/HydrationMiddleware/HydratePublicProperties.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/HydrationMiddleware/HydratePublicProperties.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/LifecycleManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/LifecycleManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/LivewireManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/LivewireManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/LivewireServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/LivewireServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/LivewireViewCompilerEngine.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/LivewireViewCompilerEngine.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Macros/ViewMacros.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Macros/ViewMacros.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Macros/livewire-view-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Macros/livewire-view-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Redirector.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Redirector.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/RenameMe/SupportBrowserHistory.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/RenameMe/SupportBrowserHistory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/RenameMe/SupportRedirects.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/RenameMe/SupportRedirects.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/TemporaryUploadedFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/TemporaryUploadedFile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Testing/TestableLivewire.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/src/Testing/TestableLivewire.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
