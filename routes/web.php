@@ -12,7 +12,9 @@ use Illuminate\Support\Facades\Route;
 
 // Admin
     Route::get('/admin', [App\Http\Controllers\Admin\HomeController::class , 'index' ])->name('admin.home')->middleware('auth');
+
     Route::middleware('auth')->prefix('admin')->group(function (){
+        Route::middleware('admin')->group(function (){
     Route::get('/', [App\Http\Controllers\Admin\HomeController::class , 'index' ])->name('admin.home');
 //Category routes
     Route::prefix('category')->group(function (){
@@ -72,8 +74,9 @@ use Illuminate\Support\Facades\Route;
     //Settings routes
     Route::match(array('GET','POST'),'settings', [App\Http\Controllers\Admin\SettingsController::class , 'index' ])->name('admin.settings');
 
+        }); #admin
 
-});
+}); #auth
 
 
     //Kullanıcı
@@ -103,7 +106,7 @@ Route::get('/delete/{id}', [\App\Http\Controllers\Home\UserCrudController::class
 
 
 
-//Route::get('/login', [HomeController::class , 'login' ])->name('adminlogin');
+Route::get('/dashboard', [HomeController::class , 'login' ])->name('adminlogin');
 Route::post('/loginchk', [HomeController::class , 'loginchk' ])->name('loginchk');
 Route::get('/', [HomeController::class , 'index' ])->name('home.page');
 
