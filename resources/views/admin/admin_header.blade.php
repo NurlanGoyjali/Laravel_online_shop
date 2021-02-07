@@ -15,9 +15,9 @@
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./user.html">
+                    <a class="nav-link" href="{{route('admin.user')}}">
                         <i class="material-icons">person</i>
-                        <p>User Profile</p>
+                        <p>Kullanıcılar</p>
                     </a>
                 </li>
                 <li class="nav-item ">
@@ -62,26 +62,13 @@
 
 
 
-
-                <li class="nav-item ">
-                    <a class="nav-link" href="./map.html">
-                        <i class="material-icons">location_ons</i>
-                        <p>Maps</p>
-                    </a>
-                </li>
-
                 <li class="nav-item ">
                     <a class="nav-link" href="./notifications.html">
                         <i class="material-icons">notifications</i>
-                        <p>Notifications</p>
+                        <p>İşlem YOK</p>
                     </a>
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="./rtl.html">
-                        <i class="material-icons">language</i>
-                        <p>RTL Support</p>
-                    </a>
-                </li>
+
 
             </ul>
         </div>
