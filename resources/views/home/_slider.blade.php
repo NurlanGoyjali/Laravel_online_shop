@@ -20,7 +20,7 @@
                                 <button type="button" class="btn btn-default get">Git</button>
                             </div>
                             <div class="col-sm-6">
-                                <img src="{{ Storage::url($data->image) }}" class="girl img-responsive" style="width: 70%;" />
+                                <img src="{{ Storage::url($data->image) }}" class="girl img-responsive" style=" border-radius: 10px; height: 300px;" />
 
                             </div>
                         </div>

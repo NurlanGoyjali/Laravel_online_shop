@@ -50,23 +50,24 @@
                         <h2 class="title text-center"> Ürünler </h2>
                         @foreach($cdata as $rs)
 
-                            <div class="col-sm-4">
+                            <div class="col-md-4">
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
-                                        <div class="productinfo text-center">
-                                            <img src="{{ Storage::url($rs->image) }}" alt="" />
+                                        <div class="productinfo text-center" >
+                                            <img src="{{ Storage::url($rs->image) }}" style=" border-radius: 10px; height: 250px;" alt="" />
                                             <h2>{{$rs->price}} TL</h2>
                                             <p>{{$rs->title}}</p>
                                             <a href="{{route('product',$rs->id)}}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Gör</a>
                                         </div>
-                                        <div class="product-overlay">
-                                            <div class="overlay-content">
+                                        <div class="product-overlay" style="border-radius: 10px;" >
+                                            <div class="overlay-content" >
                                                 <h2>{{$rs->price}} TL</h2>
                                                 <p>{{$rs->title}}</p>
                                                 <a href="{{route('product',$rs->id)}}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Gör</a>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="choose">
                                         <ul class="nav nav-pills nav-justified">
                                             <li><a href="#"><i class="fa fa-plus-square"></i>Favorilere Ekle</a></li>

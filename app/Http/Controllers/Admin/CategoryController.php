@@ -92,7 +92,7 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-        $data = Category::with('child');
+        $data = Category::find($id);
        // $id= DB::select('select * from categories where id=?',[$id]);
         //$data=$data[0];
 

@@ -41,11 +41,26 @@
                 </li>
 
                 <li class="nav-item ">
+                    <a class="nav-link" href="{{route('admin.review')}}">
+                        <i class="material-icons">reviews</i>
+                        <p>Reviews</p>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="{{route('admin.faq')}}">
+                        <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                        <p>SSS</p>
+                    </a>
+                </li>
+
+                <li class="nav-item ">
                     <a class="nav-link" href="{{route('admin.settings')}}">
                         <i class="material-icons">settings</i>
                         <p>Settings</p>
                     </a>
                 </li>
+
+
 
 
                 <li class="nav-item ">

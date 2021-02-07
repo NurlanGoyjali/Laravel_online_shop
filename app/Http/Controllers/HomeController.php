@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Livewire\Review;
+use App\Models\Faq;
 use App\Models\Image;
 use App\Models\Message;
 use App\Models\Category;
@@ -86,6 +87,13 @@ class HomeController extends Controller
 
 
         return view('home.Referances');
+
+    }
+    public function Fag(){
+
+        $data = Faq::where('status','vizible')->get();
+
+        return view('home.Fag',['fag'=>$data]);
 
     }
 
