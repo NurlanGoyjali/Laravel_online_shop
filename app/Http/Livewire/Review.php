@@ -37,8 +37,8 @@ class Review extends Component
 
         \App\Models\Review::create([
             'product_id'=>$this->product_id,
+            'responsible'=>Product::find($this->product_id)->user_id,
             'user_id'=>Auth::id(),
-            'responsible'=>Auth::id(),
             'IP'=>$_SERVER['REMOTE_ADDR'],
 
             'subject'=>$this->subject,

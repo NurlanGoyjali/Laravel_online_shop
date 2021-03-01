@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 date_default_timezone_set('Europe/Istanbul');
@@ -40,6 +41,7 @@ class ProductController extends Controller
                 'title'=> $request->input('Title'),
                 'keywords'=> $request->input('Keywords'),
                 'quantity'=> $request->input('Quantity'),
+                'user'=>Auth::user()->id,
                 'slug'=> $request->input('Slug'),
                 'price'=> $request->input('price'),
                 'image'=> Storage::putFile('images',$request->file('Image') ),
@@ -111,15 +113,15 @@ class ProductController extends Controller
         DB::table('products')->where('id',$id)->update([
 
             'title'=> $request->input('Title'),
-            //'keywords'=> $request->input('Keywords'),
+            'keywords'=> $request->input('Keywords'),
             'quantity'=> $request->input('Quantity'),
-            //'slug'=> $request->input('Slug'),
+            'slug'=> $request->input('Slug'),
+            'user_id'=>Auth::user()->id,
             'price'=> $request->input('Price'),
-           // 'image'=> Storage::putFile('images',$request->file('image') ),
-            //'status'=> $request->input('Status'),
+            //'image'=> Storage::putFile('images',$request->file('image') ),
+            'status'=> $request->input('Status'),
             'detail'=> $request->input('Detail'),
             'updated_at' =>$data,
-
 
         ]);
 

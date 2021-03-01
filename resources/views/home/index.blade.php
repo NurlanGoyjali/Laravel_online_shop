@@ -3,9 +3,10 @@
     $setting = \App\Http\Controllers\HomeController::SettingList();
     $data = \App\Http\Controllers\HomeController::CategoryList();
     $category_data = \App\Models\Category::all();
-    $rec = \App\Models\Product::limit(3)->get();
-
-
+    $rec = \App\Models\Product::inRandomOrder()->limit(3)->get();
+    if (Auth::user())
+    $favo = \App\Models\Favory::where('user_id',Illuminate\Support\Facades\Auth::user()->id)->get();
+    $ct=0;
 @endphp
 @section('title', $setting->title)
 @section('description')  {{$setting->description}} @endsection
@@ -14,7 +15,7 @@
 
 @section('content')
 
-    @include('home._slider')
+    @include('home.HomePart._slider')
     <section>
         <div class="col-sm-3" >
             <div class="left-sidebar">
@@ -25,7 +26,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
 
-                                <h4 class="panel-title"><a href="#">{{$rs->title}}</a></h4>
+                                <h4 class="panel-title"><a href="{{route('categoryproducts',$rs->id)}}">{{$rs->title}}</a></h4>
 
 
                             </div>
@@ -49,7 +50,7 @@
 
                         <h2 class="title text-center"> Ürünler </h2>
                         @foreach($cdata as $rs)
-
+                        @if($rs->status=='True')
                             <div class="col-md-4">
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
@@ -70,11 +71,25 @@
 
                                     <div class="choose">
                                         <ul class="nav nav-pills nav-justified">
-                                            <li><a href="#"><i class="fa fa-plus-square"></i>Favorilere Ekle</a></li>
+                                            @if(\Illuminate\Support\Facades\Auth::user())
+                                                @foreach($favo as $fv)
+                                                @if($fv->product_id == $rs->id)
+                                                <li  {{ $ct=$rs->id }} ><a  style="background:#F0E68C;" href="{{route('user.delete.favory',$fv->id)}}"><i class="fa fa-plus-square"></i>Favorilerden Çıkar</a></li>
+
+
+
+                                                    @break
+                                                @endif
+                                                @endforeach
+                                            @if($ct!=$rs->id)
+                                            <li><a href="{{route('user.add.favory',$rs->id)}}"><i class="fa fa-plus-square"></i>Favorilere Ekle</a></li>
+                                            @endif
+                                            @endif
                                         </ul>
                                     </div>
                                 </div>
                             </div>
+                            @endif
                         @endforeach
 
                     </div><!--features_items-->
@@ -82,106 +97,11 @@
 
 
 
-                    <div class="category-tab"><!--category-tab-->
-                        <div class="col-sm-12">
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="#tshirt" data-toggle="tab">T-Shirt</a></li>
-                                <li><a href="#blazers" data-toggle="tab">Blazers</a></li>
-                                <li><a href="#sunglass" data-toggle="tab">Sunglass</a></li>
-                                <li><a href="#kids" data-toggle="tab">Kids</a></li>
-                                <li><a href="#poloshirt" data-toggle="tab">Polo shirt</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="tab-content">
-
-                            <div class="tab-pane fade active in" id="tshirt" >
-                                <div class="col-sm-3">
-                                    <div class="product-image-wrapper">
-                                        <div class="single-products">
-                                            <div class="productinfo text-center">
-                                                <img src="{{asset('assets')}}/images/home/gallery1.jpg" alt="" />
-                                                <h2>$56</h2>
-                                                <p>Easy Polo Black Edition</p>
-                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane fade" id="blazers" >
-                                <div class="col-sm-3">
-                                    <div class="product-image-wrapper">
-                                        <div class="single-products">
-                                            <div class="productinfo text-center">
-                                                <img src="{{asset('assets')}}/images/home/gallery4.jpg" alt="" />
-                                                <h2>$56</h2>
-                                                <p>Easy Polo Black Edition</p>
-                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="tab-pane fade" id="sunglass" >
-                                <div class="col-sm-3">
-                                    <div class="product-image-wrapper">
-                                        <div class="single-products">
-                                            <div class="productinfo text-center">
-                                                <img src="{{asset('assets')}}/images/home/gallery3.jpg" alt="" />
-                                                <h2>$56</h2>
-                                                <p>Easy Polo Black Edition</p>
-                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-                            <div class="tab-pane fade" id="kids" >
-                                <div class="col-sm-3">
-                                    <div class="product-image-wrapper">
-                                        <div class="single-products">
-                                            <div class="productinfo text-center">
-                                                <img src="{{asset('assets')}}/images/home/gallery1.jpg" alt="" />
-                                                <h2>$56</h2>
-                                                <p>Easy Polo Black Edition</p>
-                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane fade" id="poloshirt" >
-                                <div class="col-sm-3">
-                                    <div class="product-image-wrapper">
-                                        <div class="single-products">
-                                            <div class="productinfo text-center">
-                                                <img src="{{asset('assets')}}/images/home/gallery2.jpg" alt="" />
-                                                <h2>$56</h2>
-                                                <p>Easy Polo Black Edition</p>
-                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div><!--/category-tab-->
 
 
 
                     <div class="recommended_items"><!--recommended_items-->
-                        <h2 class="title text-center">recommended items</h2>
+                        <h2 class="title text-center">Sizin İçin Seçilenler</h2>
 
                         <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
@@ -192,7 +112,7 @@
                                         <div class="product-image-wrapper">
                                             <div class="single-products">
                                                 <div class="productinfo text-center">
-                                                    <img src="{{Storage::url($rc->image)}}" alt="" />
+                                                    <img src="{{Storage::url($rc->image)}}" style=" border-radius: 10px; height: 250px;" alt="" />
                                                     <h2>{{$rc->price}} TL</h2>
                                                     <p>{{$rc->title}}</p>
                                                     <a href="{{route('product',$rc->id)}}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Goster</a>

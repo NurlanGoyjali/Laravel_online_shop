@@ -6,12 +6,19 @@
 
     <div class="content">
 
+
+
+
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-3">@include('home.NavbarForUser')</div>
+                <div class="col-md-8">
+
+
                     <div class="card">
 
                         <div class="card-header card-header-primary">
+
                             <h4 class="card-title "  style="float: left"  >{{$product->title }} : İlgili resimi güncelle</h4>
                             <form method="POST" action="{{route('user.image.update',[$product->id])}}" enctype="multipart/form-data"  >
 
@@ -19,6 +26,7 @@
                                 <button type="submit" class="btn btn-primary" style="float: right; background:#3f51b5;">Güncelle</button>
 
 
+                        </div>
                         </div>
                         <div class="card-body">
 

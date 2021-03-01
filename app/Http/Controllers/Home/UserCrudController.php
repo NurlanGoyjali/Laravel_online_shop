@@ -49,7 +49,9 @@ class UserCrudController extends Controller
             $create->keywords= $request->input('Keyword');
             $create->quantity= $request->input('Quantity');
             $create->slug= $request->input('Slug');
-            $create->price= $request->input('price');
+            $create->description= $request->input('Description');
+            $create->tax= $request->input('Tax');
+            $create->price = $request->input('Price');
             $create->image= Storage::putFile('images',$request->file('Image') );
             $create->status= 'True';
             $create->detail= $request->input('detail');
@@ -111,12 +113,13 @@ class UserCrudController extends Controller
             $create->keywords= $request->input('Keyword');
             $create->quantity= $request->input('Quantity');
             $create->slug= $request->input('Slug');
-            $create->price= $request->input('price');
-            /*
-            if (empty(Storage::putFile('images',$request->file('Image') )))
+            $create->price= $request->input('Price');
+            $create->description= $request->input('Description');
+            $create->tax= $request->input('Tax');
+           /* if (empty(Storage::putFile('images',$request->file('Image') )))
                 $create->image=$create->image;
             else
-            $create->image= Storage::putFile('images',$request->file('Image') );  */
+            $create->image= Storage::putFile('images',$request->file('Image') );*/
             $create->status= 'True';
             $create->detail= $request->input('detail');
             $create->user_id = Auth::id();

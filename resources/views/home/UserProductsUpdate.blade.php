@@ -17,18 +17,7 @@
         <div class="col-md-3"><!--category-products-->
             <div class="panel-group category-products" id="accordian">
 
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-
-                        <h4 class="panel-title" style=" margin: 10% 0; padding: 3%; background:#7512;" ><a style="padding: 7%; background:#7512;"href="{{route('review',Auth::id())}}" >Yorumlarım</a></h4>
-                        <h4 class="panel-title" style=" margin: 10% 0; padding: 3%; background:#7512;" ><a style="padding: 7%; background:#7512;"href="{{route('user.products',)}}" >Ürünlerim</a></h4>
-                        <h4 class="panel-title" style=" margin: 10% 0; padding: 3%; background:#7512;" ><a style="padding: 7%; background:#7512;"href="{{route('user.product.create')}}" >Ürün Ekle</a></h4>
-                        <h4 class="panel-title" style=" margin: 10% 0; padding: 3%; background:#7512;" ><a style="padding: 7%; background:#7512;"href="" >Favorilerim</a></h4>
-
-
-
-                    </div>
-                </div>
+                @include('home.NavbarForUser')
 
             </div>
         </div><!--/category-products-->
@@ -57,7 +46,7 @@
                                             <label class="bmd-label-floating">Bağlı Olduğu Katagori</label>
 
                                             <select name="Category" class="form-control">
-                                                <option class="form-control" type="number" value="{{$update->id}}" name="" >{{$update->title}}</option>
+                                                <option class="form-control" type="number" value="{{$update->category->id}}" name="" >{{$update->category->title}}</option>
                                                 @foreach($data as $rs)
                                                     <option class="form-control" type="number" value="{{$rs->id}}" name="" >{{$rs->title}}</option>
                                                 @endforeach
@@ -118,8 +107,8 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label class="bmd-label-floating">Fiyatı</label>
-                                            <input  required type="text" value="{{$update->price}}" name="price" class="form-control">
+                                            <label class="bmd-label-floating">Fiyat</label>
+                                            <input value="{{$update->price}}" name="Price" class="form-control">
                                         </div>
                                     </div>
                                 </div>
@@ -128,7 +117,7 @@
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label class="bmd-label-floating">Stok</label>
-                                            <input  type="text" value="{{$update->quantity}}" name="quantity" class="form-control">
+                                            <input  type="text" value="{{$update->quantity}}" name="Quantity" class="form-control">
                                         </div>
                                     </div>
                                 </div>
@@ -137,7 +126,7 @@
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label class="bmd-label-floating">Tax</label>
-                                            <input  type="text" value="{{$update->tax}}" name="tax" class="form-control">
+                                            <input  type="text" value="{{$update->tax}}" name="Tax" class="form-control">
                                         </div>
                                     </div>
                                 </div>
@@ -147,7 +136,7 @@
                                             <label>Hakkında</label>
                                             <div class="form-group">
                                                 <label class="bmd-label-floating">Buraya ürün hakkıda bilgiler girebilirsiniz. </label>
-                                                <textarea class="form-control" id="summernote" name="detail" rows="5"> value="{{$update->detail}}" </textarea>
+                                                <textarea class="form-control" id="summernote" name="detail" rows="5"> {{$update->detail}} </textarea>
 
                                                 <script>
                                                     $('#summernote').summernote({

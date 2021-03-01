@@ -1,5 +1,6 @@
 @php
     $data = \App\Http\Controllers\HomeController::CategoryList()
+
 @endphp
 <div id="header"><!--header-->
 
@@ -21,11 +22,11 @@
             <div class="col-sm-6">
                 <div class="social-icons pull-right">
                     <ul class="nav navbar-nav">
-                        <li><a href="{{$setting->facebook}}"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="{{$setting->twitter}}"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="{{$setting->youtube}}"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="{{$setting->instagram}}"><i class="fa fa-dribbble"></i></a></li>
-                        <li><a href="{{$setting->email}}"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="{{$setting->facebook}}" target="_blank" ><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="{{$setting->twitter}}"  target="_blank" ><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="{{$setting->instagram}}"  target="_blank" ><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="{{$setting->youtube}}"  target="_blank" ><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="mailto:{{$setting->email}}" target="_blank" ><i class="fa fa-google-plus"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -65,9 +66,9 @@
                     <div class="shop-menu clearfix pull-right">
                         <ul class="nav navbar-nav">
                             <li><a href="{{route('myprofile')}}"><i class="fa fa-user"></i> {{Auth::user()->name}}</a></li>
-                            <li><a href=""><i class="fa fa-star"></i> Wishlist</a></li>
-                            <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-                            <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                             @if(Auth::user()->id ==1)
+                            <li><a href="/admin"><i class="fa fa-star"></i> Admin panel</a></li>
+                            @endauth
                             <li><a href="{{route('lgout')}}"><i class="fa fa-lock"></i> Çıkış</a></li>
                         </ul>
                     </div>

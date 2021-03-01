@@ -2,13 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a42abbc-814d-46c2-a527-83e4959e3783" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/User.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/UserShow.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/UserUpdate.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Favory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_11_201346_favory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/HomePart/404.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/NavbarForUser.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/UserFavory.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/92655352-e14d-4bb9-87a6-ad2e95b84e7e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/92655352-e14d-4bb9-87a6-ad2e95b84e7e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Home/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Home/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Home/UserCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Home/UserCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Review.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Review.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/CategoryAdd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/CategoryAdd.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/ProductUpdate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/ProductUpdate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/Reviews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/Reviews.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/User.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/User.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/UserUpdate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/UserUpdate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/AboutUs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/HomePart/AboutUs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/CategoryProducts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/CategoryProducts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/Contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/HomePart/Contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/Fag.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/HomePart/Fag.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/ProductDetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/ProductDetail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/Reviews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/Reviews.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/UserProductCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/UserProductCreate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/UserProductImages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/UserProductImages.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/UserProductImagesUpdate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/UserProductImagesUpdate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/UserProducts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/UserProducts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/UserProductsUpdate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/UserProductsUpdate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/UserProfile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/UserProfile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/HomePart/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/HomePart/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_message.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/HomePart/_message.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/HomePart/_slider.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/review.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,6 +224,8 @@
       <recent name="C:\xampp\htdocs\Laravel_Online_Shop\public\admin_assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Laravel_Online_Shop\resources\views\home\HomePart" />
+      <recent name="C:\xampp\htdocs\Laravel_Online_Shop\resources\views\home" />
       <recent name="C:\xampp\htdocs\Laravel_Online_Shop\database\migrations" />
       <recent name="C:\xampp\htdocs\Laravel_Online_Shop\public\admin_assets" />
     </key>
@@ -217,7 +264,12 @@
       <workItem from="1611912311663" duration="22576000" />
       <workItem from="1612091749581" duration="23136000" />
       <workItem from="1612252311624" duration="52261000" />
-      <workItem from="1612620043726" duration="51178000" />
+      <workItem from="1612620043726" duration="51360000" />
+      <workItem from="1613072142514" duration="35985000" />
+      <workItem from="1613160163779" duration="5885000" />
+      <workItem from="1613438495362" duration="11025000" />
+      <workItem from="1613890734445" duration="5792000" />
+      <workItem from="1614423877119" duration="8599000" />
     </task>
     <servers />
   </component>

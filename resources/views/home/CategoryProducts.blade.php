@@ -3,6 +3,9 @@
     $setting = \App\Http\Controllers\HomeController::SettingList();
     $data = \App\Http\Controllers\HomeController::CategoryList();
     $category_data = \App\Models\Category::all();
+    if (Auth::user())
+    $favo = \App\Models\Favory::where('user_id',Illuminate\Support\Facades\Auth::user()->id)->get();
+    $ct=0;
 
 
 @endphp
@@ -22,7 +25,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
 
-                                <h4 class="panel-title"><a href="#">{{$rs->title}}</a></h4>
+                                <h4 class="panel-title"><a href="{{route('categoryproducts',$rs->id)}}">{{$rs->title}}</a></h4>
 
 
                             </div>
@@ -50,7 +53,7 @@
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <img src="{{ Storage::url($rs->image) }}" alt="" />
+                                            <img src="{{ Storage::url($rs->image) }}" style=" border-radius: 10px; height: 250px;" alt="" />
                                             <h2>{{$rs->price}} TL</h2>
                                             <p>{{$rs->title}}</p>
                                             <a href="{{route('product',$rs->id)}}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Gör</a>
@@ -63,11 +66,25 @@
                                             </div>
                                         </div>
                                     </div>
+
+
                                     <div class="choose">
                                         <ul class="nav nav-pills nav-justified">
-                                            <li><a href="#"><i class="fa fa-plus-square"></i>Favorilere Ekle</a></li>
+                                            @if(\Illuminate\Support\Facades\Auth::user())
+                                                @foreach($favo as $fv)
+                                                    @if($fv->product_id == $rs->id)
+                                                        <li  {{ $ct=$rs->id }} ><a  style="background:#F0E68C;" href="{{route('user.delete.favory',$fv->id)}}"><i class="fa fa-plus-square"></i>Favorilerden Çıkar</a></li>
+                                                        @break
+                                                    @endif
+                                                @endforeach
+                                                @if($ct!=$rs->id)
+                                                    <li><a href="{{route('user.add.favory',$rs->id)}}"><i class="fa fa-plus-square"></i>Favorilere Ekle</a></li>
+                                                @endif
+                                            @endif
                                         </ul>
                                     </div>
+
+
                                 </div>
                             </div>
 

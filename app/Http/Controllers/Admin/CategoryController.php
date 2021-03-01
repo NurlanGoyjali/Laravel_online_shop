@@ -66,7 +66,6 @@ class CategoryController extends Controller
             'keywords'=> $request->input('Keywords'),
             'description'=> $request->input('Description'),
             'slug'=> $request->input('Slug'),
-            'image'=> $request->input('ImageController'),
             'status'=> $request->input('status'),
            ]);
         }

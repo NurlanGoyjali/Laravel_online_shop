@@ -1,10 +1,23 @@
+@section('code', '404 😭')
+
+@section('title', __('Page Not Found'))
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
+
     @php
-    $setting = \App\Http\Controllers\HomeController::SettingList()
+    $setting = \App\Http\Controllers\HomeController::SettingList();
+
+
+
     @endphp
+
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -58,12 +71,12 @@
 
 <body>
 
-@include('home._header')
+@include('home.HomePart._header')
 
-@section('content') @show
+@section('content')     @show
 
 
-@include('home._footer')
+@include('home.HomePart._footer')
 
 
 </body>

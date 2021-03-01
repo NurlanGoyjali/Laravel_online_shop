@@ -19,7 +19,6 @@
 <div class="container">
 
 
-
   			<div class="row">
 
         <div class="col-sm-9 padding-right">
@@ -75,27 +74,28 @@
                         <img src="{{asset('assets')}}images/product-details/rating.png" alt="" />
                         <span>
 									<span>{{$product->price}} TL</span>
-									<label>Quantity:</label>
+									<label>Adet:</label>
 									<input type="text" value="1" />
-									<button type="submit" class="btn btn-fefault cart">
-										<a href="" style="" /> <i class="fa fa-shopping-cart"></i>
-										Sepete Ekle
-									</button>
+
 								</span>
                         <p><b>Availability:</b> In Stock</p>
-                        <p><b>Durum:</b> New</p>
-                        <p><b>Satıcı:</b></p>
-                        <p><b>Şehir:</b></p>
-                        <p><b>Telefon:</b></p>
-                        <p><b>Satıcı mail:</b></p>
-                        <a href=""><img src="{{asset('assets')}}images/product-details/share.png" class="share img-responsive"  alt="" /></a>
+                        <p><b>Durum:</b> Alıcı bekliyor</p>
+                        <p><b>Satıcı: </b>{{$product->user->name}}</p>
+                        <p><b>Şehir:</b>{{$product->user->address}}</p>
+                        <p><b>Telefon:</b>{{$product->user->phone}}</p>
+                        <p><b>Satıcı mail: </b>{{$product->user->email}}</p>
+                        <a href=""><img src="{{asset('assets')}}images/product-details/share.png" class="share img-responsive"   alt="" /></a>
                     </div><!--/product-information-->
                 </div>
+
+
+            <div class="col-lg-12" style="margin-bottom: 15px;">
+
+                <h1>Product Details</h1>
+                {!!  $product->detail !!}
+
+            </div>
             </div><!--/product-details-->
-
-            <h1>Product Details</h1>
-            {!!  $product->detail !!}
-
             @php
                 $reviewdata = \App\Models\Review::where('product_id',$product->id)->get()
             @endphp
@@ -126,7 +126,7 @@
                                 <p>{{$rs->review}}</p>
 
                             </div>
-<p>----------------------------------------------------</p>
+<p>--------------------------------------------------</p>
                             @endforeach
 
                         </div>
@@ -134,7 +134,7 @@
 
                         <div class="col-sm-6">
                             <p><b>Write Your Review</b></p>
-                            @include('home._message')
+                            @include('home.HomePart._message')
                             @livewire('review',['id'=>$product->id])
                         </div>
 

@@ -49,13 +49,12 @@ use Illuminate\Support\Facades\Route;
             Route::get('delete/{id}', [App\Http\Controllers\Admin\MessageController::class , 'destroy' ])->name('admin.contact.destroy');
             Route::match(array('GET','POST'),'update/{id}', [App\Http\Controllers\Admin\MessageController::class , 'update' ])->name('admin.contact.update');
         });
-
         //Image routes
-    Route::prefix('image')->group(function (){
-        Route::get('show/{id}', [App\Http\Controllers\Admin\ImageController::class , 'show' ])->name('admin.image.show');
-        Route::get('delete/{id}', [App\Http\Controllers\Admin\ImageController::class , 'destroy' ])->name('admin.image.destroy');
-        Route::post('create/{id}', [App\Http\Controllers\Admin\ImageController::class , 'create' ])->name('admin.image.create');
-        Route::match(array('GET','POST'),'update/{id}', [App\Http\Controllers\Admin\ImageController::class , 'update' ])->name('admin.image.update');
+        Route::prefix('image')->group(function (){
+            Route::get('show/{id}', [App\Http\Controllers\Admin\ImageController::class , 'show' ])->name('admin.image.show');
+            Route::get('delete/{id}', [App\Http\Controllers\Admin\ImageController::class , 'destroy' ])->name('admin.image.destroy');
+            Route::post('create/{id}', [App\Http\Controllers\Admin\ImageController::class , 'create' ])->name('admin.image.create');
+            Route::match(array('GET','POST'),'update/{id}', [App\Http\Controllers\Admin\ImageController::class , 'update' ])->name('admin.image.update');
 
 
     });
@@ -89,7 +88,6 @@ use Illuminate\Support\Facades\Route;
     //Kullanıcı
 Route::middleware('auth')->prefix('myuser')->namespace('myuser')->group(function (){
 
-
 Route::get('/profile', [\App\Http\Controllers\Home\UserController::class , 'index' ])->name('myprofile');
 Route::match(array('GET','POST'),'/create', [\App\Http\Controllers\Home\UserCrudController::class , 'create' ])->name('user.product.create');
 Route::match(array('GET','POST'),'/update/{id}', [\App\Http\Controllers\Home\UserCrudController::class , 'update' ])->name('user.product.update');
@@ -97,6 +95,12 @@ Route::match(array('GET','POST'),'/update/{id}', [\App\Http\Controllers\Home\Use
 Route::get('/products', [\App\Http\Controllers\Home\UserCrudController::class , 'index' ])->name('user.products');
 Route::get('/sold/{id}', [\App\Http\Controllers\Home\UserCrudController::class , 'sold' ])->name('user.sold');
 Route::get('/delete/{id}', [\App\Http\Controllers\Home\UserCrudController::class , 'destroy' ])->name('user.delete');
+
+Route::get('/addfavory/{id}', [\App\Http\Controllers\Home\UserController::class , 'create' ])->name('user.add.favory');
+
+Route::get('/deletefavory/{id}', [\App\Http\Controllers\Home\UserController::class , 'destroy' ])->name('user.delete.favory');
+Route::get('/favory', function (){ return view('home.UserFavory');  })->name('user.favory');
+
 
 
     Route::prefix('image')->group(function (){
@@ -110,6 +114,8 @@ Route::get('/delete/{id}', [\App\Http\Controllers\Home\UserCrudController::class
 
 });
 
+Route::fallback(function (){return view('home.404');})->name('404');
+Route::get('/' , function (){ if( abort(500))  return redirect(route('404'));   })->name('error');
 
 
 

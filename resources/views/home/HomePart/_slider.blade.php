@@ -15,9 +15,9 @@
                         <div class="item {{$loop->iteration == 1 ? 'active' : '  ' }}">
                             <div class="col-sm-6">
                                 <h1><span>{{$data->title}}</span></h1>
-                                <h2>{{$data->price}}</h2>
+                                <h2>Fiyat : {{$data->price}} TL</h2>
                             <p>{{$data->description}}</p>
-                                <button type="button" class="btn btn-default get">Git</button>
+                                <a href="{{route('product',$data->id)}}"> <button type="button" class="btn btn-default get">Git</button></a>
                             </div>
                             <div class="col-sm-6">
                                 <img src="{{ Storage::url($data->image) }}" class="girl img-responsive" style=" border-radius: 10px; height: 300px;" />

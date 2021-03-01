@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Products')
+@section('title', 'Yorumlar')
 
 @section('content')
 
@@ -17,8 +17,8 @@
                             <h4 class="card-title "  style="float: left"  >Yorumlar</h4>
 
 
-                                <button type="button" class="btn btn-primary" style="float: right; background:#3f51b5  ;">Ekle</button>
-                            </a>
+
+
 
                         </div>
                         <div class="card-body">
@@ -37,8 +37,8 @@
                                         <tbody>
                                         <tr>
                                             <td class="text-primary"> {{$loop->iteration}}  </td>
-                                            <td class="text-primary">{{ $data->user_id}}</td>
-                                            <td class="text-primary">{{$data->responsible}}</td>
+                                            <td class="text-primary">{{$data->product->user->name}}</td>
+                                            <td class="text-primary">{{ $data->user->name}}</td>
                                             <td class="text-primary">{{$data->subject}}</td>
                                             <td class="text-primary">{{$data->review}}</td>
                                             <td class="text-primary">{{$data->created_at}}</td>

@@ -49,19 +49,36 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
+                                            <label class="bmd-label-floating">Keywords</label>
+                                            <input   type="text" value="{{$rs->keywords}}" class="form-control" name="Keywords">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating">Description</label>
+                                            <input   type="text" value="{{$rs->description}}" class="form-control" name="Description">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
                                             <label class="bmd-label-floating">Quantity</label>
                                             <input   type="text" value="{{$rs->quantity}}" class="form-control" name="Quantity">
                                         </div>
                                     </div>
                                 </div>
 
-
-
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label class="bmd-label-floating">Slug</label>
-                                            <input  type="text" value="{{$rs->slug}}" class="form-control" name="Slug">
+                                            <label class="bmd-label-floating">Status</label>
+                                            <input   type="text" value="{{$rs->status}}" class="form-control" name="Status">
                                         </div>
                                     </div>
                                 </div>
@@ -69,8 +86,8 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label class="bmd-label-floating">Image</label>
-                                            <input  type="text" class="form-control" name="Image">
+                                            <label class="bmd-label-floating">Slug</label>
+                                            <input  type="text" value="{{$rs->slug}}" class="form-control" name="Slug">
                                         </div>
                                     </div>
                                 </div>
@@ -90,8 +107,24 @@
                                         <div class="form-group">
                                             <label>uzun yazılar için</label>
                                             <div class="form-group">
-                                                <label class="bmd-label-floating"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
-                                                <textarea class="form-control" value="{{$rs->detail}}" name="Detail" rows="5"></textarea>
+                                                <textarea class="form-control" id="summernote" name="Detail" rows="5">{{$rs->detail}}</textarea>
+
+                                                <script>
+                                                    $('#summernote').summernote({
+
+                                                        tabsize: 2,
+                                                        height: 120,
+                                                        toolbar: [
+                                                            ['style', ['style']],
+                                                            ['font', ['bold', 'underline', 'clear']],
+                                                            ['color', ['color']],
+                                                            ['para', ['ul', 'ol', 'paragraph']],
+                                                            ['table', ['table']],
+                                                            ['insert', ['link', 'picture', 'video']],
+                                                            ['view', ['fullscreen', 'codeview', 'help']]
+                                                        ]
+                                                    });
+                                                </script>
                                             </div>
                                         </div>
                                     </div>

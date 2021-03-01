@@ -25,11 +25,19 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <select name="Category" class="form-control">
+                                            <select name="Role" class="form-control">
 
                                                 @foreach($rs->roles as $rr)
-                                                    <option class="form-control" type="number" value="{{$rr->id}}" >{{$rr->name}}</option>
-                                                @endforeach
+                                                    @if($rr->name == 'admin')
+                                                        <option class="form-control"  name="Role"selected type="number" value="{{$rr->id}}" >{{$rr->name}}</option>
+                                                        <option class="form-control" name="Role" type="number" value="2" >user</option>
+
+                                                    @else($rr->name == 'user')
+                                                        <option class="form-control" name="Role" selected type="number" value="{{$rr->id}}" >{{$rr->name}}</option>
+                                                        <option class="form-control" name="Role" type="number" value="1" >admin</option>
+
+                                                    @endif
+                                                        @endforeach
 
                                             </select>
 

@@ -7,11 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Facades\DB;
 
+/**
+ * @method static FindOrFail($param)
+ */
 class Product extends Model
 {
 
     use HasFactory;
-//bular işdemir tezden bax
+
     public function category()
     {
         return $this->belongsTo(Category::class);
@@ -27,6 +30,10 @@ class Product extends Model
         return $this->hasMany(Review::class);
     }
 
+    public function favory()
+    {
+        return $this->hasMany(Favory::class);
+    }
 
 
 

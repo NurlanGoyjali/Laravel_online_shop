@@ -10,7 +10,8 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-3">@include('home.NavbarForUser')</div>
+                <div class="col-md-8">
                     <div class="card">
                         <form method="POST" action="{{route('user.image.create',[$product->id])}}" enctype="multipart/form-data"  >
                             @csrf

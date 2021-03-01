@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
 class UserController extends Controller
@@ -76,7 +77,7 @@ class UserController extends Controller
     {
         $data=User::find($id);
             if($request->isMethod('post')){
-
+                DB::table('role_user')->where('user_id',$id)->update(['role_id'=> $request->input('Role')]);
                 $data->name = $request->input('name');
                 $data->email = $request->input('email');
                 $data->phone = $request->input('phone');

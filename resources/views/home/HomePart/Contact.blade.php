@@ -19,7 +19,7 @@
             </div>
 
             <div class="col-sm-4">
-@include('home._message')
+@include('home.HomePart._message')
                 <div class="signup-form"><!--sign up form-->
                     <h2>İletişim Formu</h2>
                     <form action="{{route('contact')}}" method="POST">

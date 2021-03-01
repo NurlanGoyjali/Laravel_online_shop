@@ -3,8 +3,11 @@
 namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller;
+use App\Models\Favory;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use function Illuminate\Support\Facades\Session;
 
 class UserController extends Controller
 {
@@ -23,9 +26,15 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($id)  // Favory muhabbeti için kullanıldı
     {
-        //
+        $user_id = Auth::user()->id;
+        $data = new Favory;
+        $data->user_id = $user_id;
+        $data->product_id = $id;
+        $data->save();
+        return redirect()->back();
+
     }
 
     /**
@@ -79,8 +88,9 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $user)
+    public function destroy($id)  // favori silme muhabbeti
     {
-        //
+        Favory::find($id)->delete();
+        return redirect()->back();
     }
 }

@@ -1,6 +1,6 @@
 @extends('layouts.home')
 
-@include('home._header')
+@include('home.HomePart._header')
 
 <body>
 
@@ -33,4 +33,4 @@
 </section><!--/form-->
 
 
-    @include('home._footer')
+    @include('home.HomePart._footer')

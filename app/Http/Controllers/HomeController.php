@@ -11,6 +11,7 @@ use App\Models\Product;
 use App\Models\Settings;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use Psy\Exception\ErrorException;
 
 class HomeController extends Controller
 {
@@ -33,8 +34,8 @@ class HomeController extends Controller
 
     public function index(){
 
-    $datafor = Product::limit(6)->get();
-    $data = Product::limit(3)->get();
+    $datafor = Product::inRandomOrder()->limit(6)->get();
+    $data = Product::inRandomOrder()->where('status','True')->limit(3)->get();
     return view('home.index',['sliderdata'=>$data,'cdata'=>$datafor]);
 
     }
@@ -54,12 +55,11 @@ class HomeController extends Controller
 
 
     public function Product($id){
+            $data = Product::findOrFail($id);
+            if (empty($data)) return redirect()->route('404');
+            $image= Image::where('product_id',$id)->get();
 
-    $data = Product::find($id);
-    $image= Image::where('product_id',$id)->get();
-
-    return view('home.ProductDetail',['product'=>$data,'img'=>$image]) ;
-
+            return view('home.ProductDetail',['product'=>$data,'img'=>$image]) ;
 }
 
     public function review($id){
@@ -148,18 +148,9 @@ class HomeController extends Controller
             return back()->withErrors([
                 'email' => 'The provided credentials do not match our records.',
             ]);
-
-
         }else{
-
             return redirect('/');
-
         }
-
-
-
-
-
     }
 
 

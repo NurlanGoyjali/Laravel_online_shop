@@ -17,17 +17,7 @@
     <div class="col-md-3"><!--category-products-->
     <div class="panel-group category-products" id="accordian">
 
-        <div class="panel panel-default">
-            <div class="panel-heading">
-
-                <h4 class="panel-title" style=" margin: 10% 0; padding: 3%; background:#7512;" ><a style="padding: 7%; background:#7512;"href="{{route('review',Auth::id())}}" >Yorumlarım</a></h4>
-                <h4 class="panel-title" style=" margin: 10% 0; padding: 3%; background:#7512;" ><a style="padding: 7%; background:#7512;"href="{{route('user.products',)}}" >Ürünlerim</a></h4>
-                <h4 class="panel-title" style=" margin: 10% 0; padding: 3%; background:#7512;" ><a style="padding: 7%; background:#7512;"href="{{route('user.product.create')}}" >Ürün Ekle</a></h4>
-
-
-
-            </div>
-        </div>
+        @include('home.NavbarForUser')
 
     </div>
     </div><!--/category-products-->
@@ -57,7 +47,7 @@
 
                                 <select name="Category" class="form-control">
                                     @foreach($data as $rs)
-                                        <option class="form-control" type="number" value="{{$rs->id}}" name="" >{{$rs->title}}</option>
+                                        <option class="form-control" type="number" value="{{$rs->id}}" name="Category" >{{$rs->title}}</option>
                                     @endforeach
 
                                 </select>
@@ -117,7 +107,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label class="bmd-label-floating">Fiyatı</label>
-                                <input  required type="text" name="price" class="form-control">
+                                <input  required type="text" name="Price" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -126,7 +116,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label class="bmd-label-floating">Stok</label>
-                                <input  type="text" name="quantity" class="form-control">
+                                <input  type="text" name="Quantity" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -135,7 +125,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label class="bmd-label-floating">Tax</label>
-                                <input  type="text" name="tax" class="form-control">
+                                <input  type="text" name="Tax" class="form-control">
                             </div>
                         </div>
                     </div>

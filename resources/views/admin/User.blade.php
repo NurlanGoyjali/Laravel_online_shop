@@ -1,10 +1,11 @@
 @extends('layouts.admin')
 
 @section('title', 'Kullanıcılar')
+@php
+$usern=0; $adminn=0; $moderator=0;
+@endphp
 
 @section('content')
-
-
 
 
     <div class="content">
@@ -16,10 +17,23 @@
 
                         <div class="card-header card-header-primary">
                             <h4 class="card-title "  style="float: left"  >Kullanıcılar</h4>
-                            <a href="{{route('admin.category.add')}}">
+@php
+$user_num = \App\Models\User::all();
+foreach ($user_num as $rs){
+    foreach ($rs->roles as $row)
+    if ($row->name == 'user') $usern = $usern+1;
+    if ($row->name == 'admin') $adminn = $adminn+1;
+    if ($row->name == 'moderator') $moderator = $moderator+1;
 
-                                <button type="button" class="btn btn-primary" style="float: right; background:#3f51b5  ;">Ekle</button>
-                            </a>
+}
+@endphp
+
+
+
+                            <div class="table-responsive"  style="float: right;  ">Kulanıcı sayımız : {{$usern}}</div>
+                            <div class="table-responsive"  style="float: right;  ">Moderator sayımız : {{$moderator}}</div>
+                            <div class="table-responsive"  style="float: right;  ">Admin sayımız : {{$adminn}}</div>
+
 
                         </div>
                         <div class="card-body">
@@ -46,7 +60,7 @@
                                                 {{$loop->iteration}}
                                             </td>
                                             <td>
-                                                <img src="{{Storage::url($data->profile_photo_path)}}" alt="">
+                                                <img src="{{Storage::url($data->profile_photo_path)}}" style=" width: 100px; " alt="">
                                             </td>
                                             <td>
                                                 {{ $data->name}}

@@ -27,7 +27,7 @@
                                         <label class="bmd-label-floating">Parent</label>
 
                                         <select name="Parent_id" class="form-control">
-                                            <option value="" class="form-control" name="Parent_id" >Parent Seç (Parenti Yok) </option>
+                                            <option value="0" class="form-control" name="Parent_id" >Parent Seç (Parenti Yok) </option>
                                         @foreach($data as $rs)
                                             <option class="form-control" value="{{$rs->id}}" >{{ $rs->title}}</option>
                                         @endforeach
@@ -74,36 +74,25 @@
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label class="bmd-label-floating"> Image</label>
-                                        <input  type="text" class="form-control" name="Image">
-                                    </div>
-                                </div>
-                            </div>
+
+
 
 
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label class="bmd-label-floating">belki lazım olur</label>
-                                        <input  type="text" class="form-control">
+                                        <label class="bmd-label-floating"> Status </label>
+                                        <select class="form-control" name="Status" id="">
+
+                                            <option class="form-control" value="True"> True </option>
+                                            <option class="form-control" value="False">False</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label>uzun yazılar için</label>
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
-                                            <textarea class="form-control" rows="5"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
+
 
                             <button type="submit" class="btn btn-primary pull-right">EKLE</button>
                             <div class="clearfix"></div>
